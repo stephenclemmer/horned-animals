@@ -1,10 +1,15 @@
 import Header from './Header.js';
-import Grid from './Grid.js';
+import Main from './Main.js';
+import Footer from './Footer.js';
+// import Main from './Main.js';
+
 function App() {
   return (
    <div>
-    <Header title="301 First React App"/>
-    <Grid/>
+    <Header title="Horned Beasts"/>
+    <Main/>
+    
+    <Footer/>
    </div>
 );
 }
