@@ -10,6 +10,7 @@ class Header extends React.Component {
     return (
     <header>
       <h1>
+        HEADER: 
         {this.props.title}
       </h1>
     </header>
