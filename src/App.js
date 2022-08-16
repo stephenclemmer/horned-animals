@@ -1,9 +1,12 @@
+import Header from './Header.js';
+import Grid from './Grid.js';
 function App() {
   return (
-   <main>
-    Stephen is Writing 
-   </main>
-  );
+   <div>
+    <Header title="301 First React App"/>
+    <Grid/>
+   </div>
+);
 }
 
 export default App;
