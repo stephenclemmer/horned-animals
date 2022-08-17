@@ -15,6 +15,7 @@ class HornedBeast extends React.Component{
         />
 
         <p>{this.props.description}</p>
+        <p>{this.props.count}</p>
 
       </div>
     )

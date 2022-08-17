@@ -77,9 +77,9 @@ Estimate of time needed to complete: 60 minutes
 
 Start time: 7:50 p.m.
 
-Finish time: _____
+Finish time: 9:00 p.m.
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1:10
 
 
 ### Feature #2: Allow users to vote for their favorite beast
@@ -87,7 +87,7 @@ Actual time needed to complete: _____
 
 Estimate of time needed to complete: 90 minutes
 
-Start time: _____
+Start time: 9:10 p.m.
 
 Finish time: _____
 

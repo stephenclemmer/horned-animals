@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from './Grid.js';
 import HornedBeast from './Horned-Beast.js';
+import Counter from './Counter.js';
 
 import animals from './data.json';
 
@@ -11,33 +12,26 @@ class Main extends React.Component{
   //Create state within the constructor function 
   constructor(props){
     super(props);
-    // Create state tied to the animals JSON fille
+    // Create initial state: tied to the animals JSON fille
     this.state = {array: animals}
   }
-
+  
   render(){
     return(
       <main>
         {
-        this.state.array.map((value) => 
-        <HornedBeast 
+          this.state.array.map((value) => 
+          <HornedBeast 
           title={value.title} 
           imageUrl={value.image_url} 
           description={value.description}
+          count={value.count}
           />
-    )
-  }
-
-
-
-
-
-
-{/* 
-<HornedBeast 
-  title={"Bull"} 
-  imageUrl={"https://via.placeholder.com/150"} 
-  description={"Bull from Spain"}/> */}
+          )
+        }
+        <div>
+          <Counter/>
+        </div>
       </main>
     )
   }
