@@ -11,11 +11,11 @@ class Main extends React.Component{
         <HornedBeast 
           title={"Unicorn"} 
           imageUrl={"https://via.placeholder.com/150"} 
-          description={"Unicorn"}/>
+          description={"Unicorn from Narnia"}/>
         <HornedBeast 
           title={"Bull"} 
           imageUrl={"https://via.placeholder.com/150"} 
-          description={"Bull"}/>
+          description={"Bull from Spain"}/>
       </main>
     )
   }
