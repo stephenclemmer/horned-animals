@@ -11,7 +11,7 @@ class Main extends React.Component{
   //Create state within the constructor function 
   constructor(props){
     super(props);
-    // Create state tied to the animals JSON file
+    // Create state tied to the animals JSON fille
     this.state = {array: animals}
   }
 
