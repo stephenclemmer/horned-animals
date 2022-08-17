@@ -9,8 +9,6 @@ class Grid extends React.Component {
         <Row/>
         <Row/>
         <Row/>
-        <Row/>
-        <Row/>
       </section>
     )
   }
