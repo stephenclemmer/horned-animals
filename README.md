@@ -89,7 +89,7 @@ Estimate of time needed to complete: 90 minutes
 
 Start time: 9:10 p.m.
 
-Finish time: NA
+Finish time: NAA
 
 Actual time needed to complete: Went until next day. Was finished in office hours.
 
