@@ -89,18 +89,19 @@ Estimate of time needed to complete: 90 minutes
 
 Start time: 9:10 p.m.
 
-Finish time: _____
+Finish time: NA
 
-Actual time needed to complete: _____
+Actual time needed to complete: Went until next day. Was finished in office hours.
 
 ### Feature #3: Bootstrap
 
 
 Estimate of time needed to complete: 90 minutes
 
-Start time: _____
+Start time: 8:00 p.m.
 
-Finish time: _____
+Finish time: 9:00 p.m.
 
-Actual time needed to complete: _____
+Actual time needed to complete: 60 minutes
 Type something
+Type Something
