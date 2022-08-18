@@ -1,4 +1,8 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 
 class HornedBeast extends React.Component{
   
@@ -16,21 +20,35 @@ vote = () => {
 
   render(){
     return(
-      <div onClick={this.vote}>
+      <Card onClick={this.vote} style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={this.props.imageUrl} alt={this.props.description} title={this.props.title}/>
+      <Card.Body>
+        <Card.Title>{this.props.title}</Card.Title>
+        <Card.Text>
+        {this.props.description} 
+        <section>{this.state.clicks}</section>
+        </Card.Text>
+        {/* <Button variant="primary">Go somewhere</Button> */}
+      </Card.Body>
+    </Card>
+     
+     
+      // <div onClick={this.vote}>
     
-        <h2>{this.props.title}</h2>
+      //   <h2>{this.props.title}</h2>
         
-        <img 
-        src={this.props.imageUrl} 
-        alt={this.props.description}
-        title={this.props.title}
-        />
+      //   <img 
+      //   src={this.props.imageUrl} 
+      //   alt={this.props.description}
+      //   title={this.props.title}
+      //   />
 
 
-        <p>Votes: {this.state.clicks}</p>
-        <p>{this.props.description}</p>
+      //   <p>Votes: {this.state.clicks}</p>
+      //   <p>{this.props.description}</p>
 
-      </div>
+      // </div>
+      
     )
   }
 }
