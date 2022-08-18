@@ -1,6 +1,6 @@
 import React from 'react';
-import HornedBeast from './Horned-Beast.js'
-import Button from 'react-bootstrap/Button';
+// import HornedBeast from './Horned-Beast.js'
+// import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 class SelectedBeast extends React.Component{
