@@ -5,38 +5,25 @@ import Modal from 'react-bootstrap/Modal';
 
 class SelectedBeast extends React.Component{
   
-  constructor(props){
-    super(props);
-      this.state = 
-      {show: false}
-  }
- 
-  handleClose = () => {
-    this.setState({show: false})
-  }
-  
-  handleOpen = () => {
-    this.setState({show: true})
-  }
-  
 
   render(){
     return(
        <Modal 
-       show={this.state.show} 
-       onHide={this.handleClose} 
+       show={this.props.showTheModal} 
+       onHide={this.props.closeTheModal} 
        animation={false}>
         <Modal.Header closeButton>
-          <Modal.Title>{this.props.description} 
+          <Modal.Title>{this.props.beastData.description} 
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body 
-          src={this.props.imageUrl} 
-          alt={this.props.description} 
-          title={this.props.title}>
+        <Modal.Body>
+        <img
+          src={this.props.beastData.image_url} 
+          alt={this.props.beastData.description} 
+          title={this.props.beastData.title}/>
         </Modal.Body>
         <Modal.Footer>
-          {/* <Button variant="secondary" onClick={handleClose}>
+           {/* <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
           <Button variant="primary" onClick={handleClose}>

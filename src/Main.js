@@ -1,9 +1,8 @@
 import React from 'react';
 // import Grid from './Grid.js';
 import HornedBeast from './Horned-Beast.js';
-
-
 import animals from './data.json';
+import SelectedBeast from './SelectedBeast.js';
 
 
 
@@ -13,25 +12,50 @@ class Main extends React.Component{
   constructor(props){
     super(props);
     // Create initial state: tied to the animals JSON fille
-    this.state = 
-    {array: animals}
+    this.state = {
+      array: animals,
+      showModal: false,
+      selectedBeast: null
+    }
   }
   
+  handleClose = () => {
+    this.setState({showModal: false})
+  }
+  
+  handleOpen = () => {
+    this.setState({showModal: true})
+  }
+
+  selectBeast = (beast) => {
+    this.setState({selectedBeast: beast})
+    this.handleOpen()
+  }
+
 
   render(){
     return(
       <main>
         {
-          this.state.array.map((value) => 
+          this.state.array.map((beast) => 
           <HornedBeast 
-          key={value._id}
-          title={value.title} 
-          imageUrl={value.image_url} 
-          description={value.description}
+          key={beast._id}
+          title={beast.title} 
+          imageUrl={beast.image_url} 
+          description={beast.description}
+          handleSelectBeast={() => this.selectBeast(beast)}
           />
           )
         }
         
+        {
+        this.state.selectedBeast && 
+        <SelectedBeast
+        showTheModal={this.state.showModal}
+        closeTheModal={this.handleClose}
+        beastData={this.state.selectedBeast}
+        />
+        }
       </main>
     )
   }
