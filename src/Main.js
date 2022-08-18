@@ -1,7 +1,7 @@
 import React from 'react';
 // import Grid from './Grid.js';
 import HornedBeast from './Horned-Beast.js';
-// import Counter from './Counter.js';
+
 
 import animals from './data.json';
 
@@ -13,14 +13,10 @@ class Main extends React.Component{
   constructor(props){
     super(props);
     // Create initial state: tied to the animals JSON fille
-    this.state = {array: animals}
+    this.state = 
+    {array: animals}
   }
   
-  // counter start _________
-
-  // increment = 
-
-  // counter end ___________
 
   render(){
     return(
