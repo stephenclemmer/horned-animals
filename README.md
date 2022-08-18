@@ -89,18 +89,28 @@ Estimate of time needed to complete: 90 minutes
 
 Start time: 9:10 p.m.
 
-Finish time: _____
+Finish time: 4:30 p.m.
 
-Actual time needed to complete: _____
+Actual time needed to complete: Total of 5-6 hours working through this and trying to understand how to get functionality. Ultimately worked with John Cokos to get functionality in the counter.
 
 ### Feature #3: Bootstrap
 
 
 Estimate of time needed to complete: 90 minutes
 
-Start time: _____
+Start time: 8:00 p.m.
 
-Finish time: _____
+Finish time: 9:30 p.m.
 
-Actual time needed to complete: _____
-Type something
+Actual time needed to complete: 1.5 hours totalRead through documentation in the class repo, and watched a 20 minute video on using the app. Goit stuck and worked with TA to get the last 10% over the line. 
+
+### Feature #4: Modal
+
+
+Estimate of time needed to complete: 3 hours
+
+Start time: 9:00 p.m.
+
+Finish time: 2:00 p.m.
+
+Actual time needed to complete: 7 hours total. Read through documentation, watched the class demo, set up as mush as I could but couldn't figure out how to use props to allow components to pass data. worked and researched until 2:00 a.m.  Set up a work ticket with TA at noon the next day, worked by myself for an ahour, and then met with Justin Hammerly who navigated me through what I needed to do to make the code work. 
