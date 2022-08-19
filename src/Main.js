@@ -5,7 +5,7 @@ import animals from './data.json';
 import SelectedBeast from './SelectedBeast.js';
 import Formz from './Form.js'
 
-
+let names = ['Stephen', "Andy", "Jim", "Ken"];
 
 class Main extends React.Component{
   
@@ -16,7 +16,8 @@ class Main extends React.Component{
     this.state = {
       array: animals,
       showModal: false,
-      selectedBeast: null
+      selectedBeast: null,
+      beastSelection: animals
     }
   }
   
@@ -33,16 +34,29 @@ class Main extends React.Component{
     this.handleOpen()
   }
 
+  handleChange = (event) => {
+    let filter = Number(event.target.value);
+    // change the value from a string to a number
+
+    let filteredBeasts = this.state.array.filter(beast => beast.horns === filter)
+    this.setState({beastSelection: filteredBeasts});
+  }
 
   render(){
     return(
       <main>
         {
-          <Formz/>
+          <Formz
+          changeHandler={this.handleChange}
+          />
         }
 
+     
+
+{/* Render filtered beasts */}
+
         {
-          this.state.array.map((beast) => 
+          this.state.beastSelection.map((beast) => 
           <HornedBeast 
           key={beast._id}
           title={beast.title} 
