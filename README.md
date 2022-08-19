@@ -114,3 +114,13 @@ Start time: 9:00 p.m.
 Finish time: 2:00 p.m.
 
 Actual time needed to complete: 7 hours total. Read through documentation, watched the class demo, set up as mush as I could but couldn't figure out how to use props to allow components to pass data. worked and researched until 2:00 a.m.  Set up a work ticket with TA at noon the next day, worked by myself for an ahour, and then met with Justin Hammerly who navigated me through what I needed to do to make the code work. 
+
+### Feature #5: By number of horns
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 3:00 p.m.
+
+Finish time: 8:30 p.m.
+
+Actual time needed to complete: 5.5 hours
