@@ -3,6 +3,7 @@ import React from 'react';
 import HornedBeast from './Horned-Beast.js';
 import animals from './data.json';
 import SelectedBeast from './SelectedBeast.js';
+import Formz from './Form.js'
 
 
 
@@ -36,6 +37,10 @@ class Main extends React.Component{
   render(){
     return(
       <main>
+        {
+          <Formz/>
+        }
+
         {
           this.state.array.map((beast) => 
           <HornedBeast 
