@@ -1,11 +1,9 @@
 import React from 'react';
-// import Grid from './Grid.js';
 import HornedBeast from './Horned-Beast.js';
 import animals from './data.json';
 import SelectedBeast from './SelectedBeast.js';
 import Formz from './Form.js'
 
-let names = ['Stephen', "Andy", "Jim", "Ken"];
 
 class Main extends React.Component{
   
@@ -50,10 +48,6 @@ class Main extends React.Component{
           changeHandler={this.handleChange}
           />
         }
-
-     
-
-{/* Render filtered beasts */}
 
         {
           this.state.beastSelection.map((beast) => 

@@ -1,10 +1,6 @@
 import React from 'react';
-// import SelectedBeasts from './SelectedBeast.js';
-
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-// import Modal from 'react-bootstrap/Modal';
-
 
 class HornedBeast extends React.Component{
   
@@ -14,7 +10,6 @@ class HornedBeast extends React.Component{
     this.state = {
       clicks: 0,
     }
-      // {expand: false}
   }
 
 vote = () => {
@@ -22,16 +17,8 @@ vote = () => {
   this.setState({clicks});
 }
 
-
-
-// modal = () => {
-//   console.log('You Did It!!!!')
-//   this.handleOpen()
-// }
-
   render(){
     return(
-      
       <>
       <Card  style={{ width: '18rem' }}>
         <Card.Img 
@@ -55,16 +42,8 @@ vote = () => {
             </section>
         </Card.Body>
       </Card>
-      
-
-    
-
-
       </>
     )
-  }
-
-  
-  
+  }  
 }
 export default HornedBeast;
