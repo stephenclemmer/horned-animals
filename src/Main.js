@@ -1,3 +1,4 @@
+/* The `Main` class component renders a form and a list of `HornedBeast` components that can be filtered by the number of horns, and displays a modal with details of the selected `HornedBeast`component. */
 import React from 'react';
 import HornedBeast from './Horned-Beast.js';
 import animals from './data.json';
@@ -53,19 +54,15 @@ about the user's interaction with the dropdown menu. */
 
   render(){
     return(
-      <main>
-      /* This code is rendering the `Formz` component, which is a form that allows the user to filter
-      the displayed `HornedBeast` components based on the number of horns they have. The
-      `changeHandler` prop is passed to the `Formz` component, which is a function that is called
-      when the user selects a new value in the dropdown menu. This function updates the
-      `beastSelection` state to only include `HornedBeast` components with the selected number of
-      horns. */
+      <>
         {
           <Formz
           changeHandler={this.handleChange}
           />
         }
 
+
+{/* Renders all of the beasts at the outset of the program, and changes those rendered based on how it has been filtered by number of horns */}
         {
           this.state.beastSelection.map((beast) => 
           <HornedBeast 
@@ -78,6 +75,12 @@ about the user's interaction with the dropdown menu. */
           )
         }
         
+{/* This code is conditionally rendering the `SelectedBeast` component based on the value of
+`this.state.selectedBeast`. If `this.state.selectedBeast` is truthy, meaning it contains an object
+with information about a selected beast, then the `SelectedBeast` component is rendered with the
+props `showTheModal`, `closeTheModal`, and `beastData` passed in. If `this.state.selectedBeast` is
+      falsy, meaning no beast has been selected, then the `SelectedBeast` component is not rendered. */}
+      
         {
         this.state.selectedBeast && 
         <SelectedBeast
@@ -86,7 +89,7 @@ about the user's interaction with the dropdown menu. */
         beastData={this.state.selectedBeast}
         />
         }
-      </main>
+      </>
     )
   }
 }
